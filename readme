@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+docker build -t cc-dev .
+docker run -itd -v/mnt:/mnt -v/home:/home --name cc-dev cc-dev
+alias cc-dev='docker exec -it -u$(id -u):$(id -g) -w$PWD cc-dev'
