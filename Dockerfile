@@ -7,4 +7,4 @@ run /emsdk/emsdk install latest
 run /emsdk/emsdk activate latest
 env EMSDK=/emsdk
 env EMSDK_NODE=/emsdk/node/15.14.0_64bit/bin/node
-env PATH="/emsdk:/emsdk/upstream/emscripten:/emsdk/upstream/bin:/emsdk/node/15.14.0_64bit/bin:${PATH}"
+env PATH="${PATH}:/emsdk:/emsdk/upstream/emscripten:/emsdk/upstream/bin:/emsdk/node/15.14.0_64bit/bin"
